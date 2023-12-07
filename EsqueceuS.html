@@ -3,39 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleEs.css">
     <title>Esqueceu a Senha</title>
   </head>
   <body>
-    <header>Recuperar Conta</header>
-    <section>
+    <header>
+      <a href="index.html">&lt;</a>
+      <h1>Recuperar Conta</h1>
+      <span></span>
+    </header>
+    <section id="sec">
       <form id="Recuperar">
         <div class="Emaill">
-          <label for="Email" id="label_E-mail"> E-Mail : </label>
-          <input type="text" id="Email" placeholder="Email" required />
+          <label for="Email" id="label_E-mail" class="label"> E-Mail : </label>
+          <input type="text" id="Email" placeholder="Email" class="input" required />
         </div>
-        <div>
-          <label for="Cidade" id="label_Cidade"> Cidade : </label>
-          <input type="text" id="Cidade" placeholder="Cidade" required />
+        <div class="Emaill">
+          <label for="Cidade" id="label_Cidade" class="label"> Cidade : </label>
+          <input type="text" id="Cidade" placeholder="Cidade" class="input" required />
         </div>
-        <div>
-          <label for="Senha_Nova" id="label_Senha"> Senha Nova: </label>
-          <input type="password" id="Senha_Nova" placeholder="Senha" required />
+        <div class="Emaill">
+          <label for="Senha_Nova" id="label_Senha" class="label"> Senha Nova: </label>
+          <input type="password" id="Senha_Nova" placeholder="Senha" class="input" required />
         </div>
-        <label for="Senha_Nova2" id="label_SenhaNova2"
-          >Repetir-Senha Nova:
-        </label>
-        <input
+        <div class="Emaill">
+          <label for="Senha_Nova2" id="label_SenhaNova2" class="label"
+            >Repetir-Senha Nova:
+          </label>
+          <input
           type="password"
           id="Senha_Nova2"
-          placeholder="Repetir-Senha"
+          placeholder="Repetir-Senha" class="input"
           required
         />
-        <div>
+        </div>     
+        <div class="Emaill">
           <button type="button" value="Envio" id="btnE">Enviar</button>
         </div>
       </form>
     </section>
     <p contenteditable="true">oi</p>
+    <footer>
+      
+    </footer>
     <script src="EsqueceuSenha.js"></script>
   </body>
 </html>

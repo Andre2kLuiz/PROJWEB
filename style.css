@@ -1,8 +1,11 @@
 html {
-  background: linear-gradient(#12b304, white);
+  background: linear-gradient(#12b304, #13b30446);
   width: 100%;
   height: 150%;
   font-family: Arial, sans-serif;
+}
+body {
+  margin-top: 200px;
 }
 .div_logo {
   display: grid;

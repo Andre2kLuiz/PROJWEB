@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Dados</title>
+    <link rel="stylesheet" href="styleE.css">
     <style>
       #popup {
         display: none;
@@ -26,60 +27,68 @@
     </style>
   </head>
   <body>
-    <header>Editar o Seu Cadastro</header>
-    <section>
-      <form id="Edicao">
-        <div>
-          <label for="Nome" id="Label_nome">Nome :</label>
-          <input type="text" id="Nome" placeholder="Nome" />
+    <header>
+      <a href="index.html">&lt;</a>
+      <h1>Editar o Seu Cadastro</h1>
+      <p></p>
+    </header>
+    <section id="sec">
+      <form id="edicao">
+        <div class="container">
+          <label for="Nome" id="Label_nome" class="label">Nome </label>
+          <input type="text" id="Nome" placeholder="Nome" class="imput" />
         </div>
-        <div>
-          <label for="E-mail" id="label_email">Email :</label>
-          <input type="email" id="Email" placeholder="E-mail" />
+        <div class="container">
+          <label for="E-mail" id="label_email" class="label">Email </label>
+          <input type="email" id="Email" placeholder="E-mail" class="imput" />
         </div>
-        <div>
-          <label for="E-mail" id="label_email_novo"> Novo Email :</label>
-          <input type="email" id="Email_Novo" placeholder="Novo E-mail" />
+        <div class="container">
+          <label for="E-mail" id="label_email_novo" class="label"> Novo Email </label>
+          <input type="email" id="Email_Novo" placeholder="Novo E-mail" class="imput" />
         </div>
-        <div>
-          <label for="Cidade" id="label_cidade">Cidade :</label>
-          <input type="text" id="Cidade" placeholder="Cidade" />
+        <div class="container">
+          <label for="Cidade" id="label_cidade" class="label">Cidade </label>
+          <input type="text" id="Cidade" placeholder="Cidade" class="imput" />
         </div>
-        <div>
-          <label for="Estado" id="Label_Estado">Estado : </label>
-          <input type="text" id="Estado" placeholder="Estado" />
+        <div class="container">
+          <label for="Estado" id="Label_Estado" class="label">Estado </label>
+          <input type="text" id="Estado" placeholder="Estado" class="imput" />
         </div>
-        <div>
-          <label for="Senha" id="label_senha">Senha : </label>
-          <input type="password" id="Senha" placeholder="Senha" />
+        <div class="container">
+          <label for="Senha" id="label_senha" class="label">Senha </label>
+          <input type="password" id="Senha" placeholder="Senha" class="imput" />
         </div>
-        <div>
-          <label for="Senha" id="label_repetir_senha">Repetir-Senha : </label>
+        <div class="container">
+          <label for="Senha" id="label_repetir_senha" class="label">Repetir-Senha </label>
           <input
             type="password"
-            id="Repetir-Senha"
+            id="Repetir-Senha" 
+            class="imput"
             placeholder="Repetir-Senha"
           />
         </div>
-        <div>
-          <label for="Senha" id="label_senhaNova">Digite a Senha Nova: </label>
-          <input type="password" id="SenhaNova" placeholder="Senha-Nova" />
+        <div class="container">
+          <label for="Senha" id="label_senhaNova" class="label">Digite a Senha Nova </label>
+          <input type="password" id="SenhaNova" placeholder="Senha-Nova" class="imput" />
         </div>
-        <div>
-          <button type="button" value="Editar" id="BtnE">
+        <div class="container">
+          <button type="button" value="Editar" id="BtnE" class="Btn">
             Editar e Salvar
           </button>
         </div>
-        <div>
-          <button type="button" value="Apagar" id="BtnD">Apagar Conta</button>
+        <div class="container">
+          <button type="button" value="Apagar" id="BtnD" class="Btn">Apagar Conta</button>
         </div>
-        <div id="popup">
+        <div class="container" id="popup">
           <p id="MSG"></p>
-          <button id="sim">Sim</button>
-          <button id="nao" onclick="FecharMsg()">Não</button>
+          <button type="button" id="sim">Sim</button>
+          <button type="button" id="nao" onclick="FecharMsg()">Não</button>
         </div>
       </form>
     </section>
     <script src="UpdateDelete.js"></script>
   </body>
+  <footer>
+
+  </footer>
 </html>

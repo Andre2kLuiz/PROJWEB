@@ -9,45 +9,48 @@
   </head>
   <body>
     <header>
-      <h1>Tela de Cadastramento</h1>
+      <a href="index.html" id="voltar">&lt;</a>
+      <h1>Tela de Cadastro</h1>
+      <p></p>
     </header>
     <section id="Local_Cadastro">
-      <div id="MsgErro"></div>
-      <div id="MsgSucess"></div>
+      
       <form id="Cadastro" class="Cadastro_Area">
-        <div>
-          <label id="label_nome" for="Nome">Digite o seu Nome</label>
+        <div class="camposV">
+          <label id="label_nome" for="Nome">Digite o seu Nome<br></label>
           <input type="text" id="Nome_User" placeholder="Nome" required />
         </div>
-        <div>
-          <label id="label_email" for="E-mail">Digite o seu E-mail</label>
+        <div class="camposV">
+          <label id="label_email" for="E-mail">Digite o seu E-mail<br></label>
           <input type="email" id="Email_User" placeholder="E-mail" required />
         </div>
         <div></div>
-        <label id="label_cidade" for="Cidade">Digite sua Cidade</label>
-        <input type="text" id="Cidade_User" placeholder="Cidade" required />
-
-        <label id="label_estado" for="Estado">Digite seu Estado</label>
-        <input type="text" id="Estado_User" placeholder="Estado" required />
-
-        <label id="label_senha" for="Senha">Digite sua Senha</label>
-        <input type="password" id="password" placeholder="Senha" required />
-
-        <label id="label_repetir_senha" for="Repetir_Senha"
-          >Repita a Senha Digitada Anteriormente</label
-        >
-        <input
-          type="password"
-          id="CloneP"
-          placeholder="Repetir_Senha"
-          required
-        />
-
-        <button class="botao" type="button" value="Cadastrar" id="btnG">
-          Cadastrar
-        </button>
+        <div class="inform">
+          <label id="label_cidade" for="Cidade" class="label">Digite sua Cidade</label>
+          <input type="text" id="Cidade_User" placeholder="Cidade" class="imput" required />
+          <label id="label_estado" for="Estado"class="label">Digite seu Estado</label>
+          <input type="text" id="Estado_User" placeholder="Estado" class="imput" required />
+          <label id="label_senha" for="Senha"class="label">Digite sua Senha</label>
+          <input type="password" id="password" placeholder="Senha" class="imput" required />
+          <label id="label_repetir_senha" for="Repetir_Senha" class="label">Repita a Senha Digitada Anteriormente</label>
+          <input
+            type="password"
+            id="CloneP"
+            placeholder="Repetir_Senha" 
+            class="imput"
+            required
+          />
+          <button class="botao" type="button" value="Cadastrar" id="btnG">
+           Cadastrar
+          </button>
+        </div>
+        <div id="MsgErro"></div>
+        <div id="MsgSucess"></div>
       </form>
     </section>
   </body>
+  <footer class="pe">
+    <img src="#" alt="">
+  </footer>
   <script src="Cadastro_script.js"></script>
 </html>

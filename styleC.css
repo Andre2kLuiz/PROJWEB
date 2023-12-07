@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#fff, #a9a8a8);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #12b304;
+    border-radius: 0px 0px 10px 10px;
+    height: 65px;
+    margin-bottom: 200px;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#ir{
+    color: white;
+    font-size: 30px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+#Local_Cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    
+}
+
+#Cadastro {
+    display: grid;
+    
+}
+.camposV{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.camposV input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+.inform{
+    display: grid;
+    padding-left: 20px;
+}
+
+.label{
+    margin-top: 5px;
+}
+
+.imput{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.botao{
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    color: white;
+    background-color: #13b304bb;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color:  #13b304;
+}
+
+.pe{
+    width: 99vw;
+    height: 65px;
+    background-color: #12b304;
+    border-radius: 10px 10px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+}
